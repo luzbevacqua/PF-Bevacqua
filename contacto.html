@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight - Contacto</title>
+    <link rel="shortcut icon" href="Imagenes/Moonlight.png">
+    <link rel="stylesheet" href="Styles/estilos.css" />
+</head>
+<body id="fondo-4">
+    <nav class="navegation">
+        <a href="index.html">
+            <img src="Imagenes/Moonlight.png" width="120px" title="Inicio" 
+            />
+        </a>
+        <ul>
+        <li>
+            <a href="fotografias.html">Fotografías
+            </a>
+        </li>
+        <li>
+            <a href="sobremi.html">Sobre mí
+            </a>
+        </li>
+        <li>
+            <a href="contacto.html">Contacto
+            </a>
+        </li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 class="contacto">Contacto</h2>
+        <p class="contacto-2">Para más información, puedes contactarte por:</p>
+            <a href="https://www.instagram.com/invisibleph_/">
+                <img class="instagram" 
+                src="Imagenes/Instagram.png" 
+                alt="Instagram"
+                />
+            </a>
+            <a href="https://www.whatsapp.com/?lang=es_LA">
+                <img class="whatsapp"
+                src="Imagenes/Whatsapp.png" 
+                alt="Whatsapp"
+                />
+            </a>
+            <a href="https://mail.google.com/">
+                <img class="gmail"
+                src="Imagenes/Gmail.png" 
+                alt="Gmail"
+                />
+            </a>
+    </section>
+
+    <h2 class="formul">O puede consultar por este medio y le responderemos a la brevedad:</h2>
+    <section id="formulario">
+        <form action="texto.text" method="post" enctype="text/plain">
+            <fieldset>
+                <legend><b>Consulte aquí:</b></legend>
+            <div>
+                <label for="Nombre y Apellido">Nombre y Apellido:</label>
+                <input type="text" id="Nombre y Apellido" placeholder="Ejemplo: Juan Pérez" size="30"/>
+            </div>
+            <div> 
+                <label for="Correo Electrónico">Correo Electrónico:</label>   
+                <input type="email" id="Correo Electrónico" placeholder="Ejemplo: juanperez123@gmail.com" size="30"/>
+            </div>
+            <div>
+                <label for="Asunto">Asunto:</label>
+                <input type="text" id="Asunto" placeholder="Ejemplo: Consulta Precios" size="50"/>
+            </div>
+            <div>
+                <label for="Consulta">Consulta:</label>
+                <input type="text" id="Consulta" placeholder="Escribir aquí" size="150"/>
+            </div>
+            <div>
+                <div>Programar sesión</div>
+                <input type="radio" name="sesión" value="Programar" />
+                <div>Precios sesión</div>
+                <input type="radio" name="sesión" value="Precios" />
+                <div>Otra consulta</div>
+                <input type="radio" name="sesión" value="Consulta" />
+            </div>
+            <div>
+                <p>Tipo:</p>
+                <select name="Tipo de sesión:">
+                    <option value="Producción para marca">Producción para marca</option>
+                    <option value="Book de 15 años">Book de 15 años</option>
+                    <option value="Book personal">Book personal</option>
+                    <option value="Evento social">Evento social</option>
+                    <option value="Otro tipo de sesión o consulta">Otro tipo de sesión o consulta</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" /> 
+                <input type="reset" />
+                <input type="button" value="Sin acción aún" />
+            </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer id="footer-4">
+        <div class="direccion">
+            <h2>Dirección del Estudio Fotográfico</h2>
+        </div>
+        <div>
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3284.8917713882406!2d-58.423567288879106!3d-34.58160497284943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDM0JzUzLjgiUyA1OMKwMjUnMTUuNiJX!5e0!3m2!1ses-419!2sar!4v1690161821956!5m2!1ses-419!2sar" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="redes-sociales">
+            <h2>Moonlight</h2>
+            <p>Redes Sociales</p>
+                <a href="https://www.instagram.com/invisibleph_/">
+                    <img src="Imagenes/Instagram.png" 
+                    alt="Instagram" 
+                    width="60px"
+                    title="Instagram"
+                    />
+                </a>
+                <a href="https://www.facebook.com/invisiblephotograph">
+                    <img src="Imagenes/Facebook.png" 
+                    alt="Facebook" 
+                    width="60px"
+                    title="Facebook"
+                    />
+                </a>
+        </div>
+        <div class="newsletter">
+            <h2>Newsletter</h2>
+            <form action="texto.text" method="post" enctype="text/plain">
+                <label for="Correo Electrónico">Regístrate:</label>  
+                <input type="email" id="Correo Electrónico" 
+                placeholder="Tu Email aquí" size="35px"/>
+                <input type="submit" value="Enviar"/>
+            </form>
+    </div>
+    <div class="copyright">
+        <p>©Moonlight</p>
+    </div>
+    </footer>
+</body>
+</html>

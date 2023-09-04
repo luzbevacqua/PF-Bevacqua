@@ -1,0 +1,34 @@
+body {
+    overflow-x: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    display: inline-block;
+    background-color: white;
+    text-align: left;
+
+    &:hover {
+        background-color:rgb(154, 178, 244);
+    }
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'Quicksand-Regular';
+    font-size: large;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 500px;
+}
+
+nav.navegation {
+    width: 12%;
+    grid-area: nav;
+}

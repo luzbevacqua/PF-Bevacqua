@@ -1,0 +1,37 @@
+@mixin color-font {
+    color: white;
+    font-family: 'Quicksand-Regular';
+}
+
+
+
+.direccion {
+    margin: 15px 60px;
+    font-size: 15px;
+    @include color-font;
+}
+
+.maps {
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+.redes-sociales {
+    margin: -280px 600px 0px 600px;
+    font-size: 20px;
+    @include color-font;
+    text-align: center;
+}
+
+.newsletter {
+    margin: -180px 1180px;
+    font-size: 15px;
+    @include color-font;
+}
+
+.copyright {
+    margin: 220px 700px;
+    font-size: 12px;
+    @include color-font;
+}

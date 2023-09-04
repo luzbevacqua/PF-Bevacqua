@@ -1,84 +1,27 @@
 /* Estilos para todos los html */
 
-
-@font-face {
-    font-family: 'Quicksand-Regular';
-    src: url(Fonts/Quicksand-Regular.ttf);
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    overflow-x: hidden;
-}
+@import "navbar";
+@import "font";
+@import "footer";
+@import "color";
 
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-nav li {
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    text-align: left;
-}
-
-nav li:hover {
-    background-color:rgb(154, 178, 244);
-}
-
-ul {
-    list-style-type: none;
-    font-family: 'Quicksand-Regular';
-    font-size: large;
-    margin: 10px;
+@mixin flex-col {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 500px;
 }
 
-nav.navegation {
-    width: 12%;
-    grid-area: nav;
-}
-
-.direccion {
-    margin: 15px 60px;
-    font-size: 15px;
-    font-family: 'Quicksand-Regular';
-    color: white;
-}
-
-.maps {
-    border-radius: 10px;
-    margin-left: 30px;
-    margin-top: -10px;
-}
-
-.redes-sociales {
-    margin: -280px 600px 0px 600px;
-    font-size: 20px;
-    font-family: 'Quicksand-Regular';
-    color: white;
-    text-align: center;
-}
-
-.newsletter {
-    margin: -180px 1180px;
-    font-size: 15px;
-    font-family: 'Quicksand-Regular';
-    color: white;
-}
-
-.copyright {
-    margin: 220px 700px;
-    font-size: 12px;
-    font-family: 'Quicksand-Regular';
-    color: white;
+@mixin bg-align-position {
+    background: $azul;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 
@@ -86,12 +29,11 @@ nav.navegation {
 
 
 #fondo {
-    background-color: rgb(255, 255, 255);
+    @extend #fondo-2 ;
     background-image: url("MoonlightPhotography.gif");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position-x: center;
-    margin: 50px;
 }
 
 .grid {
@@ -103,29 +45,23 @@ nav.navegation {
       'footer footer footer';
     grid-template-columns: 1370px auto 15%;
     height: 100vh;
-}
+    }
 
 #footer {
     grid-area: footer;
     height: 410px;
     line-height: 50px;
-    background: #3957b2;
-    text-align: left;
-    position: absolute;
+    @include bg-align-position;
     margin: 0px 0px -410px 0px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 /* Dimensión del Samsung Galaxy S20 Ultra para html index */
 
 @media screen and (max-width:412px) {
     nav a {
+        @include flex-col;
         font-size: 25px;
         width: 500px;
-        display: flex;
-        flex-direction: column;
         margin-left: -98px;
         align-items: center;
     }
@@ -141,9 +77,9 @@ nav.navegation {
         background-size:contain;
         margin-top: -50px;
     }
+
     #footer {
-        display:flex;
-        flex-direction: column;
+        @include flex-col;
         height: 930px;
         margin-bottom: -930px;
     }
@@ -168,7 +104,7 @@ nav.navegation {
 
     .copyright {
         margin: 170px;
-        color: black;
+        color: $blanco;
     }
 }
 
@@ -177,7 +113,7 @@ nav.navegation {
 
 
 #fondo-2 {
-    background-color: rgb(255, 255, 255);
+    background-color: $blanco;
     margin: 50px;
 }
 
@@ -187,7 +123,7 @@ nav.navegation-2 {
 
 .bordes-redondeados {
     border-radius: 20px;
-    border: 15px solid #3957b2;
+    border: 15px solid $azul;
 }
 
 .fotografías-1 {
@@ -198,9 +134,8 @@ nav.navegation-2 {
 }
 
 .albumes {
+    @include flex-col;
     width: 700px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     margin-left: 240px;
 }
@@ -231,13 +166,8 @@ nav.navegation-2 {
 #footer-2 {
     height: 410px;
     line-height: 50px;
-    background: #3957b2;
-    text-align: left;
-    position: absolute;
+    @include bg-align-position;
     margin: 0px 0px -1400px 0px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 /* Dimensión del Samsung Galaxy S20 Ultra en el html Fotografias */
@@ -245,10 +175,9 @@ nav.navegation-2 {
 @media screen and (max-width:412px) {
     
     nav a {
+        @include flex-col;
         font-size: 25px;
         width: 500px;
-        display: flex;
-        flex-direction: column;
         margin-left: -98px;
         align-items: center;
     }
@@ -278,8 +207,7 @@ nav.navegation-2 {
     }
 
     #footer-2 {
-        display:flex;
-        flex-direction: column;
+        @include flex-col;
         margin-bottom: -2500px;
         height: 1000px;
     }
@@ -305,7 +233,7 @@ nav.navegation-2 {
 
     .copyright {
         margin: 170px;
-        color: rgb(255, 255, 255);
+        color: $blanco;
     }
 }
 
@@ -314,7 +242,7 @@ nav.navegation-2 {
 
 
 #fondo-5 {
-    background-color: rgb(255, 255, 255);
+    @extend #fondo-2 ;
 }
 
 #grid-2 {
@@ -371,13 +299,8 @@ footer.footer {
     grid-area: footer;
     height: 400px;
     line-height: 50px;
-    background: #3957b2;
-    text-align: left;
-    position: absolute;
+    @include bg-align-position;
     margin: 0px 0px -1800px 0px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 /* Dimensión del Samsung Galaxy S20 Ultra en el html Moda */
@@ -385,38 +308,33 @@ footer.footer {
 @media screen and (max-width:412px) {
 
     nav a {
+        @include flex-col;
         font-size: 25px;
         width: 500px;
-        display: flex;
-        flex-direction: column;
         margin-left: -98px;
         align-items: center;
     }
 
     .header {
-        display: flex;
+        @include flex-col;
         margin-left: -100px;
-        flex-direction: column;
         margin-top: 850px;
         
     }
 
     .navegation-3 {
-        display: flex;
-        flex-direction: column;
+        @include flex-col;
         padding: 100px 0px;
     }
 
     .columnas {
-        display: flex;
-        flex-direction: column;
+        @include flex-col;
         margin-top: 950px;
         margin-left: -205px;
     }
 
     #footer-5 {
-        display:flex;
-        flex-direction: column;
+        @include flex-col;
         margin-bottom: -8900px;
         height: 1000px;
     }
@@ -442,7 +360,7 @@ footer.footer {
 
     .copyright {
         margin: 170px;
-        color: rgb(255, 255, 255);
+        color: $blanco;
     }
 }
 
@@ -451,8 +369,7 @@ footer.footer {
 
 
 #fondo-3 {
-    background-color: rgb(255, 255, 255);
-    margin: 50px;
+    @extend #fondo-2 ;
 }
 
 .sobre-mi {
@@ -474,13 +391,8 @@ footer.footer {
 #footer-3 {
     height: 410px;
     line-height: 50px;
-    background: #3957b2;
-    text-align: left;
-    position: absolute;
+    @include bg-align-position;
     margin: 0px 0px -410px 0px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
 
 
@@ -488,8 +400,7 @@ footer.footer {
 
 
 #fondo-4 {
-    background-color: rgb(255, 255, 255);
-    margin: 50px;
+    @extend #fondo-2 ;
 }
 
 .contacto {
@@ -537,11 +448,6 @@ footer.footer {
 #footer-4 {
     height: 410px;
     line-height: 50px;
-    background: #3957b2;
-    text-align: left;
-    position: absolute;
+    @include bg-align-position;
     margin: 0px 0px -900px 0px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }

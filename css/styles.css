@@ -9,6 +9,16 @@ body {
   overflow-x: hidden;
 }
 
+.moonlight {
+  width: 100px;
+  transition: all 2s;
+  width: 100px;
+}
+.moonlight:hover {
+  transition: all 2s;
+  width: 125px;
+}
+
 nav a {
   text-decoration: none;
   color: black;
@@ -18,9 +28,12 @@ nav li {
   display: inline-block;
   background-color: white;
   text-align: left;
+  width: 90px;
 }
 nav li:hover {
   background-color: rgb(154, 178, 244);
+  transition: all 1s;
+  width: 150px;
 }
 
 ul {
@@ -46,8 +59,8 @@ nav.navegation {
 .direccion {
   margin: 15px 60px;
   font-size: 15px;
-  font-family: "Quicksand-Regular";
   color: white;
+  font-family: "Quicksand-Regular";
 }
 
 .maps {
@@ -59,33 +72,31 @@ nav.navegation {
 .redes-sociales {
   margin: -280px 600px 0px 600px;
   font-size: 20px;
-  font-family: "Quicksand-Regular";
   color: white;
+  font-family: "Quicksand-Regular";
   text-align: center;
 }
 
 .newsletter {
   margin: -180px 1180px;
   font-size: 15px;
-  font-family: "Quicksand-Regular";
   color: white;
+  font-family: "Quicksand-Regular";
 }
 
 .copyright {
   margin: 220px 700px;
   font-size: 12px;
-  font-family: "Quicksand-Regular";
   color: white;
+  font-family: "Quicksand-Regular";
 }
 
 /* Estilos del Index */
 #fondo {
-  background-color: #ffffff;
   background-image: url("MoonlightPhotography.gif");
   background-repeat: no-repeat;
   background-size: 50%;
   background-position-x: center;
-  margin: 50px;
 }
 
 .grid {
@@ -102,19 +113,19 @@ nav.navegation {
   background: #3957b2;
   text-align: left;
   position: absolute;
-  margin: 0px 0px -410px 0px;
   bottom: 0;
   left: 0;
   width: 100%;
+  margin: 0px 0px -410px 0px;
 }
 
 /* Dimensión del Samsung Galaxy S20 Ultra para html index */
 @media screen and (max-width: 412px) {
   nav a {
-    font-size: 25px;
-    width: 500px;
     display: flex;
     flex-direction: column;
+    font-size: 25px;
+    width: 500px;
     margin-left: -98px;
     align-items: center;
   }
@@ -150,11 +161,11 @@ nav.navegation {
   }
   .copyright {
     margin: 170px;
-    color: black;
+    color: #ffffff;
   }
 }
 /* Estilos de Fotografias */
-#fondo-2 {
+#fondo-2, #fondo-4, #fondo-3, #fondo {
   background-color: #ffffff;
   margin: 50px;
 }
@@ -176,9 +187,9 @@ nav.navegation-2 {
 }
 
 .albumes {
-  width: 700px;
   display: flex;
   flex-direction: column;
+  width: 700px;
   align-items: center;
   margin-left: 240px;
 }
@@ -212,19 +223,19 @@ nav.navegation-2 {
   background: #3957b2;
   text-align: left;
   position: absolute;
-  margin: 0px 0px -1400px 0px;
   bottom: 0;
   left: 0;
   width: 100%;
+  margin: 0px 0px -1400px 0px;
 }
 
 /* Dimensión del Samsung Galaxy S20 Ultra en el html Fotografias */
 @media screen and (max-width: 412px) {
   nav a {
-    font-size: 25px;
-    width: 500px;
     display: flex;
     flex-direction: column;
+    font-size: 25px;
+    width: 500px;
     margin-left: -98px;
     align-items: center;
   }
@@ -331,26 +342,26 @@ footer.footer {
   background: #3957b2;
   text-align: left;
   position: absolute;
-  margin: 0px 0px -1800px 0px;
   bottom: 0;
   left: 0;
   width: 100%;
+  margin: 0px 0px -1800px 0px;
 }
 
 /* Dimensión del Samsung Galaxy S20 Ultra en el html Moda */
 @media screen and (max-width: 412px) {
   nav a {
-    font-size: 25px;
-    width: 500px;
     display: flex;
     flex-direction: column;
+    font-size: 25px;
+    width: 500px;
     margin-left: -98px;
     align-items: center;
   }
   .header {
     display: flex;
-    margin-left: -100px;
     flex-direction: column;
+    margin-left: -100px;
     margin-top: 850px;
   }
   .navegation-3 {
@@ -391,11 +402,6 @@ footer.footer {
   }
 }
 /* Estilos de Sobre Mi */
-#fondo-3 {
-  background-color: #ffffff;
-  margin: 50px;
-}
-
 .sobre-mi {
   text-align: center;
   font-family: "Quicksand-Regular";
@@ -418,18 +424,13 @@ footer.footer {
   background: #3957b2;
   text-align: left;
   position: absolute;
-  margin: 0px 0px -410px 0px;
   bottom: 0;
   left: 0;
   width: 100%;
+  margin: 0px 0px -410px 0px;
 }
 
 /* Estilos de Contacto */
-#fondo-4 {
-  background-color: #ffffff;
-  margin: 50px;
-}
-
 .contacto {
   text-align: center;
   font-family: "Quicksand-Regular";
@@ -445,43 +446,37 @@ footer.footer {
   margin: 70px 285px 0px;
 }
 
-.instagram {
-  width: 60px;
-  margin: 90px 660px 100px;
-}
-
-.whatsapp {
-  width: 90px;
-  margin: -165px 530px 300px;
-}
-
-.gmail {
-  width: 60px;
-  margin: -358px 780px 400px;
+.contacto-3 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 #formulario {
-  margin-top: -300px;
-  margin: 0px;
   font-family: "Quicksand-Regular";
-  background-color: #c3cef1;
+  display: flex;
+  justify-content: end;
+  background-image: linear-gradient(#ffffff, #3957b2);
+  margin-left: 270px;
 }
 
 .formul {
   font-family: "Quicksand-Regular";
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #footer-4 {
-  height: 410px;
+  height: 400px;
+  width: 1500px;
   line-height: 50px;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: -100px;
+  margin-left: -50px;
   background: #3957b2;
-  text-align: left;
-  position: absolute;
-  margin: 0px 0px -900px 0px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @import "navbar";
 @import "font";
 @import "footer";
@@ -240,9 +244,8 @@ nav.navegation-2 {
 
 /* Estilos del álbum MODA que se encuentra dentro del html Fotografías*/
 
-
 #fondo-5 {
-    @extend #fondo-2 ;
+    background-color: $blanco;
 }
 
 #grid-2 {
@@ -410,7 +413,7 @@ footer.footer {
     margin: -600px 500px 0px;
 }
 
-.contacto-2{
+.contacto-2 {
     font-family: 'Quicksand-Regular';
     font-size: 25px;
     width: 800px;
@@ -418,36 +421,37 @@ footer.footer {
     margin: 70px 285px 0px;
 }
 
-.instagram {
-    width: 60px;
-    margin: 90px 660px 100px;
-}
-
-.whatsapp {
-    width: 90px;
-    margin: -165px 530px 300px;
-}
-
-.gmail {
-    width: 60px;
-    margin: -358px 780px 400px;
+.contacto-3 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 #formulario {
-    margin-top: -300px;
-    margin: -0px;
     font-family: 'Quicksand-Regular';
-    background-color:#c3cef1;
+    display: flex;
+    justify-content: end;
+    background-image: linear-gradient($blanco, $azul);
+    margin-left: 270px;
 }
 
 .formul {
     font-family: 'Quicksand-Regular';
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #footer-4 {
-    height: 410px;
+    height: 400px;
+    width: 1500px;
     line-height: 50px;
-    @include bg-align-position;
-    margin: 0px 0px -900px 0px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: -100px;
+    margin-left: -50px;
+    background: $azul;
+
 }
+

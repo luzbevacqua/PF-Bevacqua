@@ -6,11 +6,15 @@
     <title>Moonlight - Contacto</title>
     <link rel="shortcut icon" href="Imagenes/Moonlight.png">
     <link href="css/styles.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body id="fondo-4">
-    <nav class="navegation">
+    <nav class="navegation animate__animated animate__fadeInLeft">
         <a href="index.html">
-            <img src="Imagenes/Moonlight.png" width="120px" title="Inicio" 
+            <img src="Imagenes/Moonlight.png" class="moonlight animate__animated animate__rotateIn" title="Inicio" 
             />
         </a>
         <ul>
@@ -30,31 +34,36 @@
     </nav>
 
     <section>
-        <h2 class="contacto">Contacto</h2>
-        <p class="contacto-2">Para más información, puedes contactarte por:</p>
-            <a href="https://www.instagram.com/invisibleph_/">
-                <img class="instagram" 
-                src="Imagenes/Instagram.png" 
-                alt="Instagram"
-                />
-            </a>
-            <a href="https://www.whatsapp.com/?lang=es_LA">
-                <img class="whatsapp"
-                src="Imagenes/Whatsapp.png" 
-                alt="Whatsapp"
-                />
-            </a>
-            <a href="https://mail.google.com/">
-                <img class="gmail"
-                src="Imagenes/Gmail.png" 
-                alt="Gmail"
-                />
-            </a>
+        <h2 class="contacto animate__animated animate__fadeInDown">Contacto</h2>
+        <p class="contacto-2 animate__animated animate__fadeInDown">Para más información, puedes contactarte por:</p>
+        <div class="contacto-3 animate__animated animate__fadeInDown">
+        <a href="https://www.instagram.com/invisibleph_/">
+            <img class="instagram" 
+            src="Imagenes/Instagram.png" 
+            alt="Instagram"
+            width="60px"
+            />
+        </a>
+        <a href="https://www.whatsapp.com/?lang=es_LA">
+            <img class="whatsapp"
+            src="Imagenes/Whatsapp.png" 
+            alt="Whatsapp"
+            width="90px"
+            />
+        </a>
+        <a href="https://mail.google.com/">
+            <img class="gmail"
+            src="Imagenes/Gmail.png" 
+            alt="Gmail"
+            width="60px"
+            />
+        </a>
+        </div>
     </section>
 
-    <h2 class="formul">O puede consultar por este medio y le responderemos a la brevedad:</h2>
+    <h2 class="formul animate__animated animate__fadeInRight">O puede consultar por este medio y le responderemos a la brevedad:</h2>
     <section id="formulario">
-        <form action="texto.text" method="post" enctype="text/plain">
+        <form class="animate__animated animate__fadeInRight" action="texto.text" method="post" enctype="text/plain">
             <fieldset>
                 <legend><b>Consulte aquí:</b></legend>
             <div>
@@ -143,6 +152,7 @@
     </div>
     <div class="copyright">
         <p>©Moonlight</p>
+    </div>
     </div>
     </footer>
 </body>
